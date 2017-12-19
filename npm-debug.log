@@ -1,0 +1,73 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'connect-flash',
+1 verbose cli   '--save' ]
+2 info using npm@3.5.2
+3 info using node@v4.7.2
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData connect-flash
+8 silly fetchNamedPackageData connect-flash
+9 silly mapToRegistry name connect-flash
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry uri https://registry.npmjs.org/connect-flash
+13 verbose request uri https://registry.npmjs.org/connect-flash
+14 verbose request no auth needed
+15 info attempt registry request try #1 at 4:49:28 PM
+16 verbose request id 0ea43a9e615ce4f3
+17 http request GET https://registry.npmjs.org/connect-flash
+18 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=write EPROTO 140634574546752:error:140770FC:SSL routines:SSL23_GET_SERVER_HELLO:unknown protocol:s23_clnt.c:794:
+19 info attempt registry request try #2 at 4:49:38 PM
+20 http request GET https://registry.npmjs.org/connect-flash
+21 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=write EPROTO 140634574546752:error:140770FC:SSL routines:SSL23_GET_SERVER_HELLO:unknown protocol:s23_clnt.c:794:
+22 info attempt registry request try #3 at 4:50:38 PM
+23 http request GET https://registry.npmjs.org/connect-flash
+24 silly fetchPackageMetaData Error: tunneling socket could not be established, cause=write EPROTO 140634574546752:error:140770FC:SSL routines:SSL23_GET_SERVER_HELLO:unknown protocol:s23_clnt.c:794:
+24 silly fetchPackageMetaData
+24 silly fetchPackageMetaData     at ClientRequest.onError (/usr/share/npm/node_modules/request/node_modules/tunnel-agent/index.js:174:17)
+24 silly fetchPackageMetaData     at ClientRequest.g (events.js:260:16)
+24 silly fetchPackageMetaData     at emitOne (events.js:77:13)
+24 silly fetchPackageMetaData     at ClientRequest.emit (events.js:169:7)
+24 silly fetchPackageMetaData     at TLSSocket.socketErrorListener (_http_client.js:269:9)
+24 silly fetchPackageMetaData     at emitOne (events.js:77:13)
+24 silly fetchPackageMetaData     at TLSSocket.emit (events.js:169:7)
+24 silly fetchPackageMetaData     at onwriteError (_stream_writable.js:313:10)
+24 silly fetchPackageMetaData     at onwrite (_stream_writable.js:331:5)
+24 silly fetchPackageMetaData     at WritableState.onwrite (_stream_writable.js:90:5)
+24 silly fetchPackageMetaData  error for connect-flash { [Error: tunneling socket could not be established, cause=write EPROTO 140634574546752:error:140770FC:SSL routines:SSL23_GET_SERVER_HELLO:unknown protocol:s23_clnt.c:794:
+24 silly fetchPackageMetaData ] code: 'ECONNRESET' }
+25 silly rollbackFailedOptional Starting
+26 silly rollbackFailedOptional Finishing
+27 silly runTopLevelLifecycles Starting
+28 silly runTopLevelLifecycles Finishing
+29 silly install printInstalled
+30 verbose stack Error: tunneling socket could not be established, cause=write EPROTO 140634574546752:error:140770FC:SSL routines:SSL23_GET_SERVER_HELLO:unknown protocol:s23_clnt.c:794:
+30 verbose stack
+30 verbose stack     at ClientRequest.onError (/usr/share/npm/node_modules/request/node_modules/tunnel-agent/index.js:174:17)
+30 verbose stack     at ClientRequest.g (events.js:260:16)
+30 verbose stack     at emitOne (events.js:77:13)
+30 verbose stack     at ClientRequest.emit (events.js:169:7)
+30 verbose stack     at TLSSocket.socketErrorListener (_http_client.js:269:9)
+30 verbose stack     at emitOne (events.js:77:13)
+30 verbose stack     at TLSSocket.emit (events.js:169:7)
+30 verbose stack     at onwriteError (_stream_writable.js:313:10)
+30 verbose stack     at onwrite (_stream_writable.js:331:5)
+30 verbose stack     at WritableState.onwrite (_stream_writable.js:90:5)
+31 verbose cwd /home/iammda23/YelpCamp/v2
+32 error Linux 4.10.0-40-generic
+33 error argv "/usr/bin/nodejs" "/usr/bin/npm" "install" "connect-flash" "--save"
+34 error node v4.7.2
+35 error npm  v3.5.2
+36 error code ECONNRESET
+37 error network tunneling socket could not be established, cause=write EPROTO 140634574546752:error:140770FC:SSL routines:SSL23_GET_SERVER_HELLO:unknown protocol:s23_clnt.c:794:
+38 error network This is most likely not a problem with npm itself
+38 error network and is related to network connectivity.
+38 error network In most cases you are behind a proxy or have bad network settings.
+38 error network
+38 error network If you are behind a proxy, please make sure that the
+38 error network 'proxy' config is set properly.  See: 'npm help config'
+39 verbose exit [ 1, true ]
